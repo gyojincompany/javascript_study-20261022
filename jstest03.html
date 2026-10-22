@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 연습</title>
+</head>
+<body>
+    <!-- 버튼을 누르면 안녕하세요! -> 반갑습니다! -->
+    <h1 id="title">안녕하세요!</h1>
+    <button onclick="changeText1()">글자 변경1</button>
+    <button onclick="changeText2()">글자 변경2</button>
+    <hr>
+    <button onclick="alert1()">경고창 버튼1</button>
+
+    <script>
+        //자바스크립트 메서드(함수) 정의
+        function changeText1() {
+            document.getElementById("title").textContent="반갑습니다!";
+        }
+
+        function changeText2() {
+            document.getElementById("title").textContent="안녕하세요!";
+        }
+
+        function hello() {
+            console.log("hello!!");
+        }
+
+        hello(); //hello() 함수 호출
+
+        function alert1() {
+            alert("어서오세요!!");
+        }
+
+        let name = prompt(); //사용자에게 입력 받는 폼을 출력
+        console.log(name);
+
+    </script>
+</body>
+</html>

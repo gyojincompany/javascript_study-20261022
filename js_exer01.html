@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바 스크립트 연습</title>
+</head>
+<body>
+    <!-- 
+        이름 입력 버튼을 클릭하면 이름을 입력하는 입력창이 나오고
+        이름 입력 후 확인을 클릭하면 아래에서 "이름이 찍히는 곳" 부분에
+        입력한 이름이 출력되도록 하시오
+    
+    -->
+    <h1>접속하신 분의 이름 : </h1>
+    <h2 id="result">이름이 찍히는곳</h2>
+
+    <button onclick="changeName()">이름 입력</button>
+    
+    <script>
+        function changeName() {
+            let name = prompt("이름을 입력하세요");
+
+            document.getElementById("result").textContent = name;
+        }
+    </script>
+
+</body>
+</html>

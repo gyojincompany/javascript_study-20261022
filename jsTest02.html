@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바 스크립트 연습</title>
+</head>
+<body>
+
+    <h1 id="title">처음 제목</h1>
+    <h1 id="text1">안녕하세요!!</h1>
+
+    <script>
+        let score; //변수 선언        
+        score = 90; //초깃값 대입
+
+        let age = 18; //변수 선언과 동시에 초기화
+
+        //let 선언->정수, 실수, 문자열 구별하지 않음
+        let height = 170.7;
+
+        score = 90.5;
+
+        score = "구십점";
+
+        const pi = 3.14; //const 로 선언시 상수로 취급되어 값을 변경하지 못하는 변수가 됨
+        //pi = 50; //const로 선언했으므로 에러 발생!
+
+        console.log(score+90); //변수를 콘솔창에 출력
+        console.log(height);
+        console.log(pi);
+
+        //documnent->현재 웹 페이지
+        let str1 = document.getElementById("title");
+        console.log(str1);
+
+        //해당 id의 태그가 적용되어 있는 문자열을 다른 문자열로 변경
+        document.getElementById("text1").textContent = "반갑습니다";
+    </script>
+</body>
+</html>
