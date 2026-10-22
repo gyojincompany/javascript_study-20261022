@@ -8,18 +8,23 @@
 <body>
     <h1>회원 로그인</h1>
     <form>
-        아이디 : <input type="text"><br><br>
-        비밀번호 : <input type="password"><br><br>
-        <button>로그인</button>
+        아이디 : <input type="text" id="id"><br><br>
+        비밀번호 : <input type="password" id="pw"><br><br>
+        <button onclick="loginCheck()">로그인</button>
     </form>
 
     <!-- 자바스크립트로 아이디 또는 비밀번호가 공란으로 로그인 버튼이
         클릭되었을 때 "아이디 또는 비밀번호가 공란입니다!" 라는 경고창이
         출력되도록 작성하시오.    
     -->
-        <script>
+        <script> 
             function loginCheck() {
-                
+                const userId = document.getElementById("id").value.trim();
+                const userPw = document.getElementById("pw").value.trim();
+
+                if(userId =="" || userPw =="") {
+                    alert("아이디 또는 비밀번호가 공란입니다!");
+                }
             }
         </script>
 </body>
