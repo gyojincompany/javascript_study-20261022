@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1>자기소개</h1>
-    <textarea rows="5" cols="50" placeholder="50자 이내만 입력가능"></textarea>
-    <button>글자수 확인</button>
+    <textarea rows="5" cols="50" id="intro" placeholder="50자 이내만 입력가능"></textarea>
+    <button onclick="introCheck()">글자수 확인</button>
 
     <!-- 위 자기소개 란에 글을 입력한 후 글자수 확인 버튼 클릭 시
         50자 이상이면 "자기소개란은 50자 이내만 입력 가능합니다."라는 경고창을
@@ -17,7 +17,11 @@
 
     <script>
         function introCheck() {
-            
+            const str = document.getElementById("intro").value;
+
+            if(str.length >= 50) {
+                alert("자기소개란은 50자 이내만 입력 가능합니다.");
+            }
         }
     </script> 
 </body>
